@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SqlDataBaseDemo</string>
+    <string name="USERNAME">USERNAME :</string>
+    <string name="AddUser">ADD EMPLOYEE</string>
+    <string name="mobile">MOBILE :  </string>
+    <string name="address">ADDRESS : </string>
+    <string name="viewalluser">View All User</string>
+    <string name="updateUser">Update User</string>
+</resources>

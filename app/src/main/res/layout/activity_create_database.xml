@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_height="match_parent"
+    android:background="@color/SkyBlue"
+    tools:context="com.example.braintech.sqldatabasedemo.CreateDatabaseActivity">
+    <RelativeLayout
+        android:id="@+id/child_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+         >
+        <TextView
+            android:id="@+id/textViewAddUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AddUser"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/Crimson"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/child_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+       android:background="@color/SkyBlue" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/textViewUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/USERNAME"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/Green"
+                    />
+                <TextView
+                    android:id="@+id/textViewMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/mobile"
+                    android:textColor="@color/Green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewMobile"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/address"
+                    android:textColor="@color/Green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/editTextUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded"
+                    android:padding="5dp"
+                    android:hint="UserName"
+                    android:maxLines="1"
+                    android:textColorHint="@color/Green"
+                    />
+                <EditText
+                    android:id="@+id/editTextMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextUsername"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded"
+                    android:padding="5dp"
+                    android:hint="Phone"
+                    android:textColorHint="@color/Green"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    />
+                <EditText
+                    android:id="@+id/editTextAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextMobile"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded"
+                    android:padding="5dp"
+                    android:hint="Address"
+                    android:textColorHint="@color/Green"
+                    android:maxLines="1"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/child_twos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/SkyBlue">
+
+        <Button
+            android:id="@+id/btnAdduser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mybtn"
+            android:text="@string/AddUser" />
+
+        <TextView
+            android:id="@+id/textViewAllUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnAdduser"
+            android:layout_alignParentBottom="true"
+            android:text="@string/viewalluser"
+            android:textColor="@color/Red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/SkyBlue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtViewUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Shubham "
+            android:textSize="20sp"
+            android:textColor="@color/GreenYellow"
+            android:layout_weight="45"
+            />
+        <TextView
+            android:id="@+id/txtViewMobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="9410206876"
+            android:textColor="@color/GreenYellow"
+            android:textSize="20sp"
+            android:layout_weight="50"
+            />
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textSize="15dp"
+            android:textColor="@color/Blue"
+            android:background="@drawable/button_rounded"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/txtViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/GreenYellow"
+            android:textSize="20sp"
+            android:layout_weight="90"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="15dp"
+            android:textColor="@color/Blue"
+            android:background="@drawable/button_rounded"
+            android:layout_weight="10"
+            />
+    </LinearLayout>
+
+</LinearLayout>
